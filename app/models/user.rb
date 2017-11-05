@@ -1,4 +1,3 @@
 class User < ApplicationRecord
-  has_many :events
-  has_and_belongs_to_many :attendeed_event, class_name: 'Event', foreign_key: 'attendeed_event_id'  
+  has_and_belongs_to_many :attended_events, class_name: 'Event', foreign_key: 'user_id'  
 end
